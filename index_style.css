@@ -1,0 +1,10 @@
+#hi {
+    width: 100vw;
+    text-align: center;
+    font-size: 50px;
+}
+
+#text {
+    margin: 90px;
+    font-family: "Courier New", Courier, monospace;
+}

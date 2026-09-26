@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html id="page">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head> 
+<body>
+    <span id="navigation">
+        <a id="about-me-link">About me</a>
+        <a id="olympiads-link">Olympiads</a>
+        <a id="projects-link">Projects</a>
+        <a id="skills-link">Education</a>
+        <a id="connect-link">Connect</a>
+    </span>
+    
+    <div id="about-me">
+
+    </div>
+
+    <div id="olympiads" style="display: block;">
+        <p>asiudfgkhsdagfhjsgadfkjgsad jhkgfhjsagdfhjgasdjhgfhjs ышапрат ы автыоашгвыоьа шщущращуцацга рц арвыашвыптаыгвпаыщпаыпadgfghsajdkgfhj asdgchjbasdfkhgkuyfcbsufuuyaskfkuyakuksddyrfiustfbic ycdosfliuydsftgsidkybucfgkuywegfuykbdstfiuwetfiutscroufrsouifgac rpabisygfcaekuvsgcfkgabdsiuyxgknfub ydgsvcjgyvckuabfkuvydksckf</p>
+    </div>
+    <div id="projects" style="display: none;">
+        <project-card name="Modular organizer" description="An organizer where you determine how it looks and what it is." link="/projects/modular-organizer.html"></project-card>
+        <project-card name="Project Test" description="Description 2" link="/projects/test-project.html"></project-card>
+        <project-card name="Project Test" description="Description 3" link="/projects/test-project.html"></project-card>
+        <project-card name="Project Test" description="Description 4" link="/projects/test-project.html"></project-card>
+    </div>
+    <div id="skills" style="display: none;">
+        <p>skiliiii</p>
+    </div>
+    <div id="connect" style="display: none;">
+        <h3 id="connect-header">Here are my contacts and profiles, click on one to use it!</h3>
+        <table>
+            <thead>
+                <th><p>Contacts<p></th>
+                <th><p>Profiles<p></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p>Telegram: <b><a href="https://t.me/artemchekhlov">@artemchekhlov</a></b> <small>- fastest</small></p></td>
+                    <td><p>Github: <b><a href="https://github.com/ArtemChekhlov/">ArtemChekhlov</a></b></p></td>
+                </tr>
+                <tr>
+                    <td><p>Email:  <b><a href="mailto:artemchekhlov@gmail.com">artemchekhlov@gmail.com</a></b></p></td>
+                </tr>
+            ></tbody>
+    </div>
+</body>
+</html>
+
+<script>
+    const olympiads_link = document.getElementById('olympiads-link');
+    const projects_link = document.getElementById('projects-link');
+    const skills_link = document.getElementById('skills-link');
+    const connect_link = document.getElementById('connect-link');
+    const about_me_link = document.getElementById('about-me-link');
+
+    const olympiads = document.getElementById('olympiads');
+    const projects = document.getElementById('projects');
+    const skills = document.getElementById('skills');
+    const connect = document.getElementById('connect');
+    const about_me = document.getElementById('about-me');
+
+    function hide_all(){
+        olympiads.style.display = 'none';
+        projects.style.display = 'none';
+        skills.style.display = 'none';
+        connect.style.display = 'none';
+    }
+
+  olympiads_link.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    hide_all();
+    olympiads.style.display = 'block';
+    console.log('olympiads selected')
+  });
+
+  projects_link.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    hide_all();
+    projects.style.display = 'grid';
+    console.log('projects selected')
+  });
+
+  skills_link.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    hide_all();
+    skills.style.display = 'block';
+    console.log('skills selected')
+  });
+
+  connect_link.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    hide_all();
+    connect.style.display = 'block';
+    console.log('connect selected')
+  });
+
+  about_me_link.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    hide_all();
+    about_me.style.display = 'block';
+    console.log('about me selected')
+  });
+
+</script>
